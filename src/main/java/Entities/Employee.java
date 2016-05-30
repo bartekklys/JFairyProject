@@ -1,5 +1,13 @@
+package Entities;
+
+import javax.persistence.*;
+
+@Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public abstract class Employee {
 
+    @Id
+    @GeneratedValue
     private int id;
     private String firstName;
     private String lastName;
