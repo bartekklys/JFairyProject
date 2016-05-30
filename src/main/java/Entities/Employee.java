@@ -12,13 +12,13 @@ public abstract class Employee {
     private String firstName;
     private String lastName;
     private int age;
-    private int nationalIdentyficationNumber;
+    private String nationalIdentityCardNumber;
 
-    public Employee(String firstName, String lastName, int age, int nationalIdentyficationNumber) {
+    public Employee(String firstName, String lastName, int age, String nationalIdentityCardNumber) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
-        this.nationalIdentyficationNumber = nationalIdentyficationNumber;
+        this.nationalIdentityCardNumber = nationalIdentityCardNumber;
     }
 
     public String getFirstName() {
@@ -45,11 +45,11 @@ public abstract class Employee {
         this.age = age;
     }
 
-    public int getNationalIdentyficationNumber() {
-        return nationalIdentyficationNumber;
+    public String getNationalIdentityCardNumber() {
+        return nationalIdentityCardNumber;
     }
 
-    public void setNationalIdentyficationNumber(int nationalIdentyficationNumber) {
-        this.nationalIdentyficationNumber = nationalIdentyficationNumber;
+    public void setNationalIdentityCardNumber(String nationalIdentityCardNumber) {
+        this.nationalIdentityCardNumber = nationalIdentityCardNumber;
     }
 }

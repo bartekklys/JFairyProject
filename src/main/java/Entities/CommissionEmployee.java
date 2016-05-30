@@ -8,7 +8,7 @@ public class CommissionEmployee extends Employee{
     private String username;
     private String telephoneNumber;
 
-    public CommissionEmployee(String firstName, String lastName, int age, int nationalIdentyficationNumber, String username, String telephoneNumber) {
+    public CommissionEmployee(String firstName, String lastName, int age, String nationalIdentyficationNumber, String username, String telephoneNumber) {
         super(firstName, lastName, age, nationalIdentyficationNumber);
         this.username = username;
         this.telephoneNumber = telephoneNumber;
